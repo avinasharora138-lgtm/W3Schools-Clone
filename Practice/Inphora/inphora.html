@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inphora</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .container img{
+            height: 155px;
+        }
+        .container{
+            width: 300px;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: rgb(243, 240, 236);
+            box-shadow: 0 15px 35px rgb(231, 193, 143);
+        }
+        .container h3{
+            font-style: italic;
+        }
+        button{
+            background-color: rgb(0, 200, 255);
+            border: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 90px;
+            padding-right: 90px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+        button:hover{
+            background-color: rgb(0, 179, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_rJ69wYE0aJDLPfF5TIECKou-1Wrlpyjp9iSkRf9XVA&s=10" alt="">
+        <h3>GET IN TOUCH</h3>
+        <form action="homeinphora.html">
+            
+                <label for="">Name*</label> <input type="text" required><br><br>
+                <label for="">Email*</label> <input type="text" required><br><br>
+                <label for="">Phone*</label> <input type="number" required><br><br>
+                <label for="">Website URL</label> <input type="url" name="" id=""><br><br>
+                <label for="">Comment</label> <textarea></textarea><br><br>
+            <button type="submit">ENQUIRE NOW</button>
+        </form>
+    </div>
+</body>
+</html>

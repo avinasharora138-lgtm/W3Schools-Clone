@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <!-- <style>
+        button{
+            margin: 2px;
+            padding: 10px;
+            font-weight: bold;
+            border: 0;
+            border-radius: 10px;
+            background-color: goldenrod;
+            color: white;
+        }
+        .counterbutton{
+            background-color: palevioletred;
+            color: white;
+        }
+        .counterdec{
+            background-color: turquoise;
+            color: white;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <script>
+        {
+            let a = 1
+            console.log(a)
+            //(output will be 1)\
+            //(if value of a = 1/2/3/4/or any number then output will be 1/2/3/4/or any number)
+        }
+    </script> -->
+
+    <!-- <script>
+        {
+            let a = 1
+            console.log(a)
+            const b = 2
+            console.log(b)
+            //(output will be 1
+            //                2)\
+            //(if value of a = 1/2/3/4/or any number then output will be 1/2/3/4/or any number)
+        }
+    </script> -->
+
+    <!-- <script>
+        {
+        let a = 1
+        console.log(a)
+        const b = 2
+        console.log(b)
+        var c = 3
+        console.log(c)
+        }
+        //(output will be 1
+            //            2
+            //            3)\
+            //(if value of a = 1/2/3/4/or any number then output will be 1/2/3/4/or any number)
+    </script> -->
+
+    <!-- <script>
+        let a = "2"
+        console.log(a == 2)
+        //(output will be (true))
+            //(if value of a = 1/2/3/4/or any number then output will be 1/2/3/4/or any number)
+    </script> -->
+
+    <!-- <script>
+        let a = "2"
+        console.log(a == 2)
+        console.log(a == "2")
+        //(output will be (true)
+                       // (true))
+    </script> -->
+
+    <!-- <script>
+        
+        let a = prompt("Guess the number")
+        if(a == 3){
+            console.log("YOU WIN")
+        }
+        // output will be if we enter 1 in prompt then output won't show, if we enter 2 in prompt then also output won't show, if we enter 3 in prompt then output will be YOU WON, and if we enter 4,5, or any value above or below 3 then the output won't show.
+    </script> -->
+
+    <!-- <script>
+        let a = prompt("Guess the number")
+        if(a == 3){
+            console.log("YOU WON")
+        }
+        else if(a == 2){
+            console.log("a == 2")
+        }
+        // output will be if we enter 2 in prompt then output will be a == 2, if we enter 3 in prompt then output will be YOU WON, and if we enter 1 or any value above 3 then output will not be shown
+    </script> -->
+
+    <!-- <script>
+
+        let a = prompt("Guess the number")
+        if(a == 3){
+            console.log("YOU WON")
+        }
+
+        else if(a == 2){
+            console.log("a == 2")
+        }
+        else if(a == 1){
+            alert("NO")
+        }
+        // output will be if we enter 1 in prompt then output will shown alert as NO, if we enter 2 in prompt then output will be a==2, and if we enter 3 in prompt then output will be YOU WON, and if we enter 1 or any value above 3 then output will not be shown
+
+    </script> -->
+
+    <!-- <script>
+
+        let a = prompt("Guess the number")
+
+        if(a == 3){
+            console.log("YOU WON")
+        }
+
+        else if(a == 2){
+            console.log("a == 2")
+        }
+        
+        else if(a == 1){
+            alert("NO")
+        }
+
+        else if(a == 0){
+
+        }
+
+        // output will be if we enter 1 in prompt then output will shown alert as NO, if we enter 2 in prompt then output will be a==2, and if we enter 3 in prompt then output will be YOU WON, and if we enter 1 or any value above 3 then output will not be shown
+
+    </script> -->
+
+    <!-- <script>
+
+        let a = prompt("Guess the number")
+
+        if(a == 3){
+
+            console.log("YOU WON")
+
+        }
+
+        else if(a == 2){
+
+            console.log("a == 2")
+
+        }
+
+        else if(a == 1){
+
+            alert("NO")
+
+        }
+
+        else if(a == 0){
+
+
+        }
+
+        else{
+
+            console.log("YOU LOOSE")
+
+        }
+
+        // output will be if we enter 1 in prompt then output will shown alert as NO, if we enter 2 in prompt then output will be a==2, and if we enter 3 in prompt then output will be YOU WON, and if we enter any value above 3 then output will YOU LOOSE
+
+    </script> -->
+
+    <!-- <script>
+
+        let choice = prompt("1.Full name 2.Roll no 3.Class")
+
+        if(choice == 1){
+
+            console.log("Aman Kumar")
+        }
+
+        if(choice == 2){
+
+            console.log("72")
+
+        }
+
+        if(choice == 3){
+
+            console.log("8th")
+        }
+
+        // output will be if we enter 1 in prompt output will be Aman Kumar, if we enter 2 in prompt output will be 72, if we enter 3 in prompt output will be 8th
+    </script> -->
+
+    <!-- <script>
+
+        let choice = prompt("1.Full name 2.Roll no 3.Class")
+
+        if(choice == 1){
+
+            let choice2 = prompt("1.First name 2.Last name")
+
+            if(choice2 == 1){
+
+                console.log("Aman")
+
+            }
+
+            if(choice2 == 2){
+
+                console.log("Kumar")
+            }
+
+        }
+
+        if(choice == 2){
+
+            console.log("72")
+
+        }
+
+        if(choice == 3){
+
+            console.log("8th")
+        }
+
+    </script> -->
+
+    <!-- <script>
+
+        let choice = prompt("1.Student's Data")
+
+        if (choice == 1){
+
+            let choice2 = prompt("1.Name 2.Roll no 3.Class 4.Marks 5.List of Students")
+
+            if(choice2 == 1){
+
+            console.log("Aman Kumar")
+            console.log("Rakesh Kumar")
+            console.log("Srishti")
+            console.log("Simran")
+            console.log("Amar Kumar")
+            console.log("Rajesh Kumar")
+            console.log("Srishtijan")
+            console.log("Simranjeet singh")
+            console.log("Aman Singh")
+            console.log("Rakesh Sharma")
+            console.log("Srishti Kumari")
+            console.log("Simranjeet Kaur")
+            console.log("Aman Thapar")
+            console.log("Rakesh Gupta")
+            console.log("Srishti Rani")
+            console.log("Simran Rani")
+            console.log("Aman Kumar")
+            console.log("Rakesh Kumar")
+            console.log("Srishti")
+            console.log("Simran")
+            console.log("Aman Kumar")
+            console.log("Rakesh Kumar")
+            console.log("Srishti")
+            console.log("Simran")
+            console.log("Aman Kumar")
+            console.log("Rakesh Kumar")
+            console.log("Srishti")
+            console.log("Simran")
+
+            
+        }
+        if (choice2 == 2){
+
+            console.log("1")
+            console.log("2")
+            console.log("3")
+            console.log("4")
+            console.log("5")
+            console.log("6")
+            console.log("7")
+            console.log("8")
+            console.log("9")
+            console.log("10")
+            console.log("11")
+            console.log("12")
+            console.log("13")
+            console.log("14")
+            console.log("15")
+            console.log("16")
+            console.log("17")
+            console.log("18")
+            console.log("19")
+            console.log("20")
+            console.log("21")
+            console.log("22")
+            console.log("23")
+            console.log("24")
+            console.log("25")
+            console.log("26")
+            console.log("27")
+            console.log("28")
+
+        }
+
+        if(choice2 == 3){
+
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+            console.log("8th")
+
+        }
+
+        if(choice2 == 4){
+
+            console.log("72")
+            console.log("48")
+            console.log("67")
+            console.log("94")
+            console.log("72")
+            console.log("48")
+            console.log("67")
+            console.log("94")
+            console.log("72")
+            console.log("48")
+            console.log("67")
+            console.log("94")
+            console.log("72")
+            console.log("48")
+            console.log("67")
+            console.log("94")
+            console.log("72")
+            console.log("48")
+            console.log("67")
+            console.log("94")
+            console.log("72")
+            console.log("48")
+            console.log("67")
+            console.log("94")
+            console.log("72")
+            console.log("48")
+            console.log("67")
+            console.log("94")
+
+        }
+
+            if(choice2 == 5){
+
+            console.log("Roll no     Name                  Class         Marks")
+            console.log("1         Aman Kumar               8th            72")
+            console.log("2         Rakesh Kumar             8th            48")
+            console.log("3         Srishti                  8th            67")
+            console.log("4         Simran                   8th            94")
+            console.log("5         Amar Kumar               8th            72")
+            console.log("6         Rajesh Kumar             8th            48")
+            console.log("7         Srishtijan               8th            67")
+            console.log("8         Simranjeet singh         8th            94")
+            console.log("9         Aman Singh               8th            72")
+            console.log("10        Rakesh Sharma            8th            48")
+            console.log("11        Srishti Kumari           8th            67")
+            console.log("12        Simranjeet Kaur          8th            94")
+            console.log("13        Aman Thapar              8th            72")
+            console.log("14        Rakesh Gupta             8th            48")
+            console.log("15        Srishti Rani             8th            67")
+            console.log("16        Simran Rani              8th            94")
+            console.log("17        Aman Kumar               8th            72")
+            console.log("18        Rakesh Kumar             8th            48")
+            console.log("19        Srishti                  8th            67")
+            console.log("20        Simran                   8th            94")
+            console.log("21        Aman Kumar               8th            72")
+            console.log("22        Rakesh Kumar             8th            48")
+            console.log("23        Srishti                  8th            67")
+            console.log("24        Simran                   8th            94")
+            console.log("25        Aman Kumar               8th            72")
+            console.log("26        Rakesh Kumar             8th            48")
+            console.log("27        Srishti                  8th            67")
+            console.log("28        Simran                   8th            94")
+
+
+        }
+
+
+        }
+ 
+        
+    </script> -->
+    <!-- <script>
+        let choice = prompt("Enter the value")
+        let a=choice%3
+        if (choice%3){
+            console.log("Factor of 3")
+        }
+        // else if(choice==10){
+        //     console.log("This is equal to 10")
+        // }
+        else{
+            console.log("not factor of 3")
+        }
+    </script> -->
+
+    <!-- <script>
+        let choice = prompt("Enter Marks")
+        if(choice<60){
+            console.log("FAIL")
+        }
+        else if(choice<70){
+            console.log("D")
+        }
+        else if(choice<80){
+            console.log("C")
+        }
+        else if(choice<90){
+            console.log("B")
+        }
+        else{
+            console.log("A")
+        }
+    </script> -->
+
+    <!-- <script>
+        let choice = prompt("Enter Marks")
+        if(choice>90){
+            console.log("A")
+        }
+        else if(70<choice<80){
+            console.log("C")
+        }
+        else if(80<choice<90){
+            console.log("B")
+        }
+    </script> -->
+
+    <!-- <script>
+        let choice = prompt("Enter age")
+        let ticket = 100;
+        if( choice < 15 || choice > 80 ){
+            
+            if(choice>80){
+                ticket = ticket / 3
+                console.log(`Ticket price ${ticket}`)
+            }
+            else{
+                ticket = ticket / 2
+            console.log(`Ticket proce ${ticket}`)
+            }
+        }
+        else{
+            console.log(`Ticket price ${ticket}`)
+        }
+    </script> -->
+    
+    <!-- <script>
+        let choice = prompt("Enter Traffic Lights")
+        if(choice == "R"){
+            console.log("STOP")
+        }
+        else if(choice == "Y"){
+            console.log("WAIT")
+        }
+        else if(choice == "G"){
+            console.log("GO")
+        }
+        else{
+            console.log("INVALID")
+        }
+    </script> -->
+
+    <!-- <script>
+        
+        let balance = 10000
+        while(true){
+let choice = prompt("1.Check Balance 2.Withdrawl 3.Add the Amount")
+if(choice == 1){
+    alert(balance)
+    
+}
+else if(choice == 2){
+let amount = prompt("Enter Amount")
+balance = balance - amount
+alert("Withdrawl amount successful")
+}
+else if(choice == 3){
+    let add = Number(prompt("How much amount want to add"))
+    balance = balance + add
+    alert("Amount successfully added")
+}
+else{
+    alert("Enter the correct amount")
+}
+        }
+    </script> -->
+
+    <!-- <script>
+        let cart = 10000
+        let coupon = 100
+        let choice = prompt("Enter the Coupon Code")
+
+        if (choice == 123){
+            coupon = cart*10/100
+            console.log(`cart ${coupon}`)
+        }
+        else if(choice == 234){
+            coupon = cart-cart*20/100
+            console.log(`cart ${coupon}`)
+        }
+        else if(choice == 345){
+            coupon = cart*50/100
+            console.log(`cart ${coupon}`)
+        }
+        else{
+            console.log(`cart ${cart}`)
+        }
+    </script> -->
+
+    <!-- <script>
+        let i;
+        for(i=1;i<=10;i=i+1){
+            if (i == 4){
+                break
+            }
+            console.log(i)
+        }
+        console.log("loop end")
+    </script> -->
+    <!-- <script>
+        let i;
+        for(i=1;i<=10;i=i+1){
+            if (i == 4){
+                continue
+            }
+            console.log(i)
+        }
+        
+    </script> -->
+    <!-- <script>
+        let i;
+        for (i = 0; i<=10; i++){
+            console.log(i*3)
+        }
+    </script> -->
+
+    <!-- <script>
+        let i;
+        let fact = 1;
+        let number = prompt("Enter number to check factorial")
+
+        for(i = 1; i <= number; i = i + 1){
+
+        }
+        console.log("Total amount is"+fact)
+        console.log("Loop end")
+    </script> -->
+
+    <!-- <script>
+
+        let i;
+        let fact = 1;
+        // let number = (prompt("Enter your number"))
+        for(i=1; i<=10; i=i+1){
+            if(i%2==0){
+                console.log(`This is an even number ${i+5}`)
+            }
+            else{
+                console.log("This is an odd number",i+5)
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        let number = prompt("Enter a number")
+        if(number%2==0 || number%5==0){
+            console.log("This is divisible by 2 or 5")
+        }
+        else if(number%2==0 && number%5==0){
+            console.log("This number is both divisible by 2 and 5")
+        }
+    </script> -->
+
+<!-- <script>
+    let i;
+    // let choice = prompt("Enter the value")
+    for(i=1;i<10;i++){
+        if(i%2==0){
+            console.log("This is an even number")
+        }
+        else{
+            console.log("This is odd number")
+        }
+    }
+</script>     -->
+
+<!-- <script>
+    let books = 10
+    while(true){
+        let choice = prompt("How much books you want to buy")
+        if(choice<=books && books>0){
+            books = books - choice
+            alert(`Available stock is ${books}`)
+            alert(`Successfully ordered ${choice}`)
+        }
+        else if(choice>=books){
+            alert("Out of Stock")
+        }
+    }
+</script> -->
+<!-- 
+<script>
+    let books = 10
+    let toys = 20
+    let cloths = 35
+    while(true){
+        let choice = prompt("1.Books 2.Toys 3.Cloths")
+        if(choice == 1){
+            let choice = prompt("How much books you want to buy")
+            if(choice<=books && books>0){
+                books = books - choice
+                alert(`Available stock is ${books}`)
+                alert(`Successfuly ordered ${choice}`)
+            }
+            else if(choice>=books){
+                alert("Out os stock")
+            }
+        }
+        if(choice == 2){
+            let choice2 = prompt("How much toys you want to buy")
+            if(choice2<=toys && toys>0){
+                toys = toys - choice2
+                alert(`Available Toys are ${toys}`)
+                alert(`Successfully ordered ${choice2}`)
+            }
+            else if(choice2>=toys){
+                alert("Out os stock")
+            }
+        }
+        if(choice == 3){
+            let choice3 = prompt("How much clothes you want to buy")
+            if(choice3<=cloths && cloths>0){
+                cloths = cloths - choice3
+                alert(`Available clothes are ${cloths}`)
+                alert(`Successfully ordered ${choice3}`)
+            }
+            else if(choice3>=cloths){
+                alert("Out of Stock")
+            }
+        }
+    }
+</script> -->
+
+<!-- <script>
+
+    let i;
+    let choice = prompt("Enter your value")
+        if(i%2==0){
+            console.log("This is even number")
+        }
+        else{
+            console.log("This odd number")
+        }
+</script> -->
+
+<!-- <h1 id="paragraph">Welcome</h1>
+<h1 class="para">Welcome2</h1> -->
+<!-- <script>
+    // let text=document.getElementsByTagName("h1")
+    // // console.log(text)
+    // let text2=document.getElementById("paragraph")
+    // // console.log(text2)
+    // let text2=document.getElementsByClassName("para")
+    // console.log(text2)
+    // let text2=document.querySelector("#paragraph")
+    // console.log(text2)
+    // let text2=document.querySelector(".para")
+    // console.log(text2)
+    // let text2=document.querySelector("h1")
+    // console.log(text2)
+</script> -->
+
+<!-- <h1 id="heading1">Heading 1</h1>
+<h1 class="heading2">Heading 2</h1> -->
+
+<!-- <script>
+    let text = document.getElementById("heading1")
+    console.log(text)
+    let text2 = document.getElementsByClassName("heading2")
+    console.log(text2)
+    let text3 = document.getElementsByTagName("h1")
+    console.log(text3)
+    let text4 = document.querySelector("#heading1")
+    console.log(text4)
+    let text5 = document.querySelectorAll(".heading2")
+    console.log(text5)
+    let text6 = document.querySelectorAll("h1")[1]
+    console.log(text6)
+    text6.style.color="red"
+    text6.style.backgroundColor="black"
+    // let body=document.querySelector("body")
+    // body.style.backgroundColor="green"
+    document.body.style.backgroundColor="yellow"
+</script> -->
+
+<!-- <script>
+    let newElement = document.createElement("div")
+    let heading = document.getElementById("heading1")
+    let heading = document.getElementById("h1")[0]
+console.log(heading)
+    newElement.innerText="Hello"
+    newElement.style.backgroundColor = "grey"
+heading.append(newElement)
+    // document.body.append(newElement)
+</script> -->
+
+<!-- <h1 id="paragraph" class="para">Heading 1</h1>
+<h1 class="para">Heading 2</h1>
+<h1 class="para">Heading 3</h1>
+<button>Change</button> -->
+<!-- <input type="text"> -->
+<!-- <script>
+    let button = document.querySelector("button")
+    button.addEventListener("click",()=>{
+        let para=document.querySelector("#paragraph")
+        para.style.color = "red"
+    })
+    let newElement = document.createElement("div")
+let heading = document.getElementsByTagName("h1")[0]
+console.log(heading)
+    newElement.innerText = "Hello"
+    newElement.style.color = "white"
+    newElement.style.backgroundColor = "red"
+    newElement.style.height = "300px"
+    newElement.style.width = "200px"
+    newElement.style.textAlign = "center"
+    newElement.style.margin = "20px"
+    newElement.style.padding = "40px"
+    newElement.style.cursor = "pointer"
+    newElement.style.boxSizing = "border-box"
+    newElement.style.fontFamily = "Italic"
+    // newElement.style.transition = "3s"
+    newElement.style.transform = "translate(100px, 100px) rotate(20deg) skew(20deg) scale(1.4)"
+   
+    // newElement.style.borderRadius = "30px"
+    heading.append(newElement)
+</script> -->
+<!-- <div class="button">This is a button</div>
+<script>
+    let button = document.querySelector("button")
+    button.addEventListener("mousedown", () =>{
+        console.log("Triggered")
+    })
+</script> -->
+
+<!-- <script>
+    let button = document.querySelector("button")
+    button.addEventListener("click",() =>{
+        // let para = document.querySelectorAll(".para")
+        let div = document.createElement("div")
+        div.innerText = "Hello"
+        // console.log(para.length)
+        // 
+        document.body.append(div)
+    })
+</script> -->
+<!-- <h1>DOM Playground</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident qui reiciendis, in excepturi expedita omnis esse vitae, magnam et corrupti laboriosam quo quidem libero eligendi pariatur labore suscipit saepe! Nulla eveniet, officia quos quisquam cupiditate quo dolor, quae tenetur iure odit quis pariatur sequi officiis soluta excepturi omnis consequuntur.</p>
+<div>(Counter) Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, mollitia.</div>
+<div class="counter">0</div>
+<button>Click here</button>
+<button class="counterbutton">Counter</button>
+<button class="counterdec">Counterdec</button>
+<script>
+    let button = document.querySelector("button")
+    button.addEventListener("click",() =>{
+        let div =document.querySelector("div")
+        div.innerText = "Hello"
+        document.body.append(div)
+    })
+    let counter = 0
+let button1 = document.querySelector(".counterbutton")
+button1.addEventListener("click",() =>{
+counter=counter+1
+let para = document.querySelector(".counter")
+para.innerText=counter
+})
+let button2 = document.querySelector(".counterdec")
+button2.addEventListener("click",() =>{
+    counter=counter-1
+    let para = document.querySelector(".counter")
+    para.innerText=counter
+})
+    // let div = document.querySelector(".counter")
+
+
+</script> -->
+<!-- <h1>Welcome</h1>
+<form action="">
+    <input type="text" id="fullname" placeholder="Enter your name">
+    <input type="text" placeholder="Enter your age" id="age">
+
+    <button>Submit</button>
+</form>
+<script>
+    // let fullname = document.querySelector("#fullname")
+    let submitBtn=document.querySelector("button")
+    submitBtn.addEventListener("click",()=>{
+        let fullname=document.querySelector("#fullname").value
+let heading = document.getElementsByTagName("h1")
+// console.log(heading)
+heading[0].innerText= `welcome${fullname}`
+
+let age=document.querySelector("#age").value
+if(age<18){
+    alert("Not Authorised")
+}
+else{
+    alert("Authorized")
+}
+})
+</script> -->
+
+<!-- <h1>WELCOME KAJAL CHHABRA</h1>
+
+<input type="text" id="fullname" placeholder="Enter Your Name">
+<input type="text" placeholder="Enter Your Age" id="age">
+
+<button>
+    Submit
+</button>
+
+<script>
+
+    let submitBtn = document.querySelector("button")
+    submitBtn.addEventListener("click",()=>{
+        let fullname = document.querySelector("#fullname").value
+
+        let heading = document.getElementsByTagName("h1")
+        heading[0].innerText = `Welcome${fullname}`
+
+        let age = document.querySelector("#age").value
+        if(age<18){
+            alert("Not Authorized")
+        }
+        else{
+            alert("Authorized")
+        }
+    })
+</script> -->
+<!-- <h1>WELCOME</h1>
+
+<input type="text" id="fullname" placeholder="Enter your name" value="Ramesh">
+<input type="text" placeholder="Enter your age" id="age">
+<p></p>
+<button>Submit</button> -->
+
+<!-- <script>
+    let a = [12, 32, 43, 3]
+    console.log(a)
+    a[2] = 23
+    console.log(a)
+
+    // const b = 12
+    // b = 13
+    // console.log(b)
+</script> -->
+
+<!-- <script>
+    const a = [12, 32, 43, 3]
+    console.log(a)
+    a[0] = 12
+    a[1] = 32
+    a[2] = 23
+    a[3] = 23
+    console.log(a)
+
+    // const b = 12
+    // b = 13
+    // console.log(b)
+</script> -->
+
+<!-- <script>
+    const a = [12, "abc", 32, 43, 3]
+    console.log(a)
+    a[0] = 12
+    a[1] = 32
+    a[2] = 23
+    a[3] = 23
+    console.log(a)
+
+    // const b = 12
+    // b = 13
+    // console.log(b)
+</script> -->
+
+<!-- <script>
+    const a = [12, "abc", 32, 43, 23, 232, "dsdss", 23]
+    for(let i=0,i<a.length;i++){
+        console.log(a[i])
+    }
+    const p=document.querySelector("p")
+    document.querySelector("button").addEventListener("click",()=>{p.innerText=a[1]})
+</script> -->
+<!-- <input type="text" placeholder="Enter your name" id="fullname">
+<button id="save">Save</button>
+<button id="view">View</button>
+<p></p>
+<script>
+    // localStorage.setItem("fullname","Mukesh")
+document.querySelector("#save").addEventListener("click",()=>{
+    let fullname=document.querySelector("#fullname").value 
+    localStorage.setItem("name",fullname)
+})
+document.querySelector("#view").addEventListener("click",()=>{
+    document.querySelector("p").innerText=localStorage.getItem("fullname")
+})
+</script> -->
+
+<!-- 
+
+
+-->
+
+
+<!-- <input type="text" placeholder="Enter your name" id="fullname">
+<button id="save">Save</button>
+<button id="view">View</button>
+<p></p>
+<script>
+    // localStorage.setItem("fullname","Mukesh")
+document.querySelector("#save").addEventListener("click",()=>{
+    let fullname=document.querySelector("#fullname").value 
+    
+    let name=fullname 
+})
+document.querySelector("#view").addEventListener("click",()=>{
+    // document.querySelector("p").innerText=localStorage.getItem("fullname")
+    document.querySelector("p").innerText=name
+})
+</script> -->
+
+<!-- <input type="text" placeholder="Enter your name" id="fullname">
+<button id="save">Save</button>
+<button id="view">View</button>
+<p></p>
+<script>
+    
+    // localStorage.setItem("fullname","Mukesh")
+document.querySelector("#save").addEventListener("click",()=>{
+    fullname=document.querySelector("#fullname").value 
+    console.log(fullname)
+    let name=fullname 
+})
+document.querySelector("#view").addEventListener("click",()=>{
+    // document.querySelector("p").innerText=localStorage.getItem("fullname")
+    document.querySelector("p").innerText=name
+})
+</script> -->
+
+<!-- <input type="text" placeholder="Enter your name" id="fullname">
+<button id="save">Save</button>
+<button id="view">View</button>
+<p></p>
+<script>
+    // localStorage.setItem("fullname","Mukesh")
+document.querySelector("#save").addEventListener("click",()=>{
+    let fullname=document.querySelector("#fullname").value 
+    localStorage.setItem("fullname",fullname)
+
+})
+document.querySelector("#view").addEventListener("click",()=>{
+    document.querySelector("p").innerText=localStorage.getItem("fullname")
+    // document.querySelector("p").innerText=name
+})
+</script> -->
+
+<!-- <input type="text" placeholder="Enter your name" id="fullname">
+<button id="save">Save</button>
+<button id="view">View</button>
+<p></p>
+
+<script>
+
+    document.querySelector("#save").addEventListener("click",()=>{
+        let fullname = document.querySelector("#fullname").value
+        console.log(fullname)
+    })
+    document.querySelector("#view").addEventListener("click",(=>{
+        document.querySelector("p").innerText = fullname
+    }))
+</script> -->
+
+<!-- 
+
+-->
+
+<!-- <script>
+    let a = ["ramesh, 12, 18, "Morinda Punjab]
+    let b = ["suresh, 13, 19, "LDH Punjab]
+    for(const element of a){
+        console.log(element)
+    }
+
+    let studentData = [{
+        name: "Ramesh",
+        roll: 12,
+        age: 18,
+        address: "Punjab"
+    }
+    {
+    name: "Ramesh",
+    roll: 12,
+    age: 18,
+    address: "Punjab"}
+    ]
+    for(let i=0;i<10;i++){
+        console.log(studentData[i].roll)
+
+    }
+    for(const element of studentData){
+        console.log(element)
+    }
+    for(const key in stydentData){
+        console.log(studentData[key].name)
+    }
+
+    document.querySelector("#save").addEventListener("click",()=>{
+
+    })
+</script> -->
+
+<!-- <input type="text" placeholder="Enter your name" id="fullname">
+<button id="save">Save</button>
+<button id="view">View</button>
+
+<p></p>
+
+<script>
+
+    let a = [{
+            name: "Rahul",
+            age: 16,
+        }]
+        console.log(a)
+
+        a = JSON.stringify(a)
+        localStorage.setItem("data", a)
+
+        console.log(localStorage.getItem("data"))
+        let response = localStorage.getItem("data")
+        let b = JSON.parse(response)
+        console.log(b)
+</script> -->
+
+<!-- <script>
+    function a(){
+        console.log("dshjd")
+    }
+    a();
+
+</script> -->
+
+<!-- <script>
+
+    function greet(){
+        console.log("Hello")
+    }
+    greet();
+
+</script> -->
+
+<!-- <script>
+
+    function greet(fullName){
+        console.log("Hello"+fullName)
+    }
+    greet("Suresh")
+
+</script> -->
+
+<!-- <script>
+
+    function add(a,b){
+        console.log(a+b)
+    }
+    add(2,3)
+    add(5,8)
+
+</script> -->
+
+<!-- <script>
+
+    function isEven(a){
+        if(a%2==0){
+            console.log("Number is even")
+        }
+        else{
+            console.log("Number is odd")
+        }
+    }
+    isEven(4);
+    isEven(7);
+    isEven(12);
+
+</script> -->
+
+<!-- <script>
+
+    function isEven(a){
+        if(a%2==0){
+            console.log(a+"is even")
+        }
+        else{
+            console.log(a+"is odd")
+        }
+    }
+    isEven(4);
+    isEven(7);
+    isEven(12);
+
+</script> -->
+
+<!-- <script>
+
+    function q(a){
+        console.log(a*a)
+    }
+            
+            q(2)
+            q(3)
+</script> -->
+
+<!-- <script>
+    function q(b){
+    fact = 1
+    for(let i=1;i<=b;i++){
+    fact=fact*i}
+console.log(fact)
+if(b%2==0){
+    console.log(b+"is even")
+}
+else{
+    console.log(b+"is odd")
+}
+}
+    q(5)
+</script> -->
+
+<!-- <script>
+    function greet(...numbers){
+        console.log(numbers)
+    }
+    greet(1,332,2,2,23,23,23,3)
+</script> -->
+
+<!-- <script>
+    function greet(a,b){
+        console.log(a,b)
+    }
+    greet(1,332,2,2,23,23,23,3)
+</script> -->
+
+<!-- <script>
+    function isEven(a){
+        if(a%2==0){
+            console.log(a+"is even")
+        }
+        else{
+            console.log(a+"is odd")
+        }
+    }
+    isEven(4)
+    isEven(7)
+    isEven(12)
+    isEven(15)
+    isEven(16)
+    isEven(23)
+</script> -->
+
+<!-- <script>
+    let a=["Rohan,12,19,ashkjd,7293,2323,2"]
+    let b=["Rohan,12,13"]
+    let c={
+        name:"Rohan",
+        class:"12",
+        age:"19",
+        marks:{
+            english:90,
+            hindi:80,
+        }
+    }
+    console.log(a[0])
+    console.log(c.marks.hindi)
+</script> -->
+
+<!-- <script>
+    let a=[2,4,6,8,10,12,14]
+    let b=[1,3,5,7,9,11]
+    let count = 0
+    let count1=0
+  function isEven(a){
+    for (const element of a){
+    
+if(element%2==0){
+    count=count+1
+}
+else{
+    count1=count1+1
+}
+
+    }
+    console.log("even numbers",count)
+    console.log("odd numbers",count1)
+  }
+  isEven(b)
+</script> -->
+
+<!-- <script>
+    let a = 1;
+    for(a = 1; a<10; a++){
+        console.log("Hello")
+        console.log("Hi")
+        console.log(a)
+        console.log(a*2)
+        console.log(a*3)
+    }
+</script> -->
+
+<!-- <script>
+    let a = 1
+    a++;
+    ++a;
+    console.log(a)
+console.log(a++)
+    console.log(a)
+    console.log(a)
+    console.log(++a)
+    console.log(a)
+
+</script> -->
+</body>
+</html>

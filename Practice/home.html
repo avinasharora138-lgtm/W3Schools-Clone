@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .list{
+        display: flex;
+        background-color: orange;
+        color: white;
+    }
+    .list ul{
+        list-style: none;
+        display: flex;
+        margin: 40px;
+        gap: 40px;
+
+    }
+    .list ul li a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    .label{
+        margin: 35px;
+    }
+    .label button{
+        background-color: white;
+        border: 0;
+        color: orange;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 20px;
+        width: 200px;
+    }
+    .list ul li a:hover{
+        background-color: white;
+        color: orange;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .list ul li a:active{
+        background-color: orange;
+        color: orangered;
+    }
+</style>
+<body>
+    <section>
+        <nav>
+            <div class="list">
+                <img src="RAKESH.png" alt="" height="100px">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="">Top Brands</a></li>
+                    <li><a href="">Best Sellers</a></li>
+                    <li><a href="">New Arrivals</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <div class="label">
+                    <button>Search</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+</body>
+</html>

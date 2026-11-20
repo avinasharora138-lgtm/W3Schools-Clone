@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    *{
+            padding: 0;
+            line-height: 40px;
+            margin: 0;
+        }
+        .container>*{
+display: flex;
+list-style: none;
+gap: 10px;
+
+        }
+        .container{
+            position: fixed;
+            background-color:whitesmoke;
+        }
+        .container2{
+            background-color: whitesmoke;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            white-space: nowrap;
+        
+        }
+        .nav>li:hover{
+            color: orangered;
+            /* text-decoration: underline; */
+            transform: translateY(-10px);
+            
+        }
+        ul li:hover a{
+            color: orangered;
+            line-height: 10px;
+            text-underline-offset: 5px;
+            border-bottom: 2px solid;
+        
+        }
+        .applybutton{
+            background-color: orangered;
+            color: white;
+            border: 0;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        ul svg{
+            height: 30px;
+        }
+        #internship:hover .list3{
+            display: block;
+            color: black;
+        }
+        .list3 ul li:hover{
+            background-color: orangered;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+}
+.list3 ul li{
+    list-style-type: none;
+}
+.list3{
+    display: none;
+margin-top: 20px;
+
+}
+</style>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="">BLOGS</a></li>
+            <li><a href="">CULTURE</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li id="internship"><a href="">INTERNSHIP PROGRAM</a>
+            <div class="list3">
+                <ul>
+                    <li>AI/ML Training Program</li>
+                    <li>Web Development Training Program</li>
+                    <li>Python Training Program</li>
+                    <li>Digital Marketing Training</li>
+                    <li>Mean/Mern Stack Training Program</li>
+                    <li>PHP Laravel Training Program</li>
+                    <li>Shopify Training Program</li>
+                    <li>WordPress Training</li>
+                    <li>Devops Training Program</li>
+                </ul>
+            </div></li>
+            <div><button class="applybutton">APPLY FOR NOW</button></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 76, 5)" d="M470.6 566.6L566.6 470.6C575.8 461.4 578.5 447.7 573.5 435.7C568.5 423.7 556.9 416 544 416L480 416L480 96C480 78.3 465.7 64 448 64C430.3 64 416 78.3 416 96L416 416L352 416C339.1 416 327.4 423.8 322.4 435.8C317.4 447.8 320.2 461.5 329.3 470.7L425.3 566.7C437.8 579.2 458.1 579.2 470.6 566.7zM214.6 73.4C202.1 60.9 181.8 60.9 169.3 73.4L73.3 169.4C64.1 178.6 61.4 192.3 66.4 204.3C71.4 216.3 83.1 224 96 224L160 224L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 224L288 224C300.9 224 312.6 216.2 317.6 204.2C322.6 192.2 319.8 178.5 310.7 169.3L214.7 73.3z"/></svg>
+        </ul>
+    </div>
+</body>
+</html>

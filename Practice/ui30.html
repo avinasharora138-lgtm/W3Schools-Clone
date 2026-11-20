@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    header{
+        color: white;
+        background-color: rgb(96, 94, 94);
+        text-align: center;
+        padding: 10px;
+    }
+   nav{
+    background-color: rgb(244, 11, 128);
+    color: white;
+   }
+   nav ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-evenly;
+   }
+   nav ul li a{
+    text-decoration: none;
+    color: white;
+   }
+    .image img{
+       width: 100%;
+       /* height: 300px; */
+    }
+    .header{
+color: rgb(198, 6, 6);
+    }
+    .cards{
+        background-color: rgb(244, 11, 128);
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        gap: 20px;
+      box-sizing: border-box;
+    }
+    .card{
+          object-fit: cover;
+    }
+    .card img{
+        width: 100%;
+        /* padding: 10px;
+        margin: 10px; */
+        
+    }
+    .card h3 p{
+text-align: center ;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 0px;
+    }
+    td{
+        padding: 20px;
+        margin: 20px;
+    }
+    footer ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .footer ul{
+        list-style: none;
+        
+    }
+    @media (min-width:350px) and (max-width:500px){
+        .cards{
+            grid-template-columns: 1fr 1fr;
+        }
+       
+    }
+    @media(max-width:350px){
+        .cards{
+            grid-template-columns: 1fr;
+        }
+         footer{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h2>CLEARFIGURE</h2>
+        <span>DESIGN BY TEMPLATED</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Homepage</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="image">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQbin_L6Qt4t2qPxwDNyZoazK338UIdjdZvfIk8P_Iw&s=10" alt="">
+    </div>
+    <section>
+        <table>
+            <tr class="header">
+                <td>INTEGER GRAVIDA</td>
+                <td>INTEGER SIT ANET ALIQUET</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>PHASELLUS ERAT SIT AMET NIBH PELLENTESQUE CONGUE</td>
+            </tr>
+            <tr>
+                <td><a href="">Amet turpi, feugiat et sit amet</a></td>
+                <td>This is clearfigure, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, incidunt.</td>
+            </tr>
+            <tr>
+                <td><a href="">Amet turpi, feugiat et sit amet</a></td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam.</td>
+            </tr>
+            <tr>
+                <td><a href="">Amet turpi, feugiat et sit amet</a></td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quas!</td>
+            </tr>
+            <tr>
+                <td><a href="">Amet turpi, feugiat et sit amet</a></td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, illum.</td>
+            </tr>
+            <tr>
+                <td><a href="">Amet turpi, feugiat et sit amet</a></td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo, molestiae fugit ipsam pariatur?</td>
+            </tr>
+            <tr>
+                <td><a href="">Amet turpi, feugiat et sit amet</a></td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis iure vel similique voluptates illo deserunt.</td>
+            </tr>
+            <tr>
+                <td><a href="">Amet turpi, feugiat et sit amet</a></td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam porro libero, dolore vero amet architecto.</td>
+            </tr>
+        </table>
+    </section>
+    <div class="cards">
+        <div class="card">
+            <h3>SUSPENDISSE LACUS</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBczu-3ZkXlXknHKfSOGpAKjg1dMQW9azgaLJ0YNqknA&s=10" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta doloribus voluptates velit odio consequuntur ipsam repudiandae natus tempore iste.</p>
+        </div>
+        <div class="card">
+            <h3>SUSPENDISSE LACUS</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRii46i32zUdQ107Pxw8d-tldnquyu7_ehXe0rDUtmdJQ&s=10" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores exercitationem aliquid reiciendis, eius illo obcaecati nihil rerum temporibus voluptate.</p>
+        </div>
+        <div class="card">
+        <h3>SUSPENDISSE LACUS</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCvm_M6Od5TRX34xcBbW5wUKmh1KsHHQ7vSOEFLhxIOg&s=10" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam, ipsum quasi dolore autem repellat.</p>
+    </div>
+    <div class="card">
+        <h3>SUSPENDISSE LACUS</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmh-XXwa8XsNkIXc0-txcydMsYMjY9lw6LGJkK_GYPPg&s=10" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, hic!</p>
+    </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <h3>LATEST POST</h3>
+            <ul>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+           <h3>LATEST POST</h3>
+            <ul>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="">Amet turpis, feugiat et sit amet</a></li>
+            </ul> 
+        </div>
+        <div>
+            <h3>FOLLOW US</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, eius!</p>
+            <img src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png" alt="">
+            <img src="https://img.icons8.com/?size=60&id=59813&format=png" alt="">
+            <img src="https://img.icons8.com/?size=100&id=16619&format=png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

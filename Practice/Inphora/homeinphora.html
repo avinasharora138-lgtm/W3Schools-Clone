@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="aboutinphora.html">
+    <link rel="stylesheet" href="homeinphora.html">
+    <link rel="stylesheet" href="servicesinphora.html">
+    <link rel="stylesheet" href="portfolioinphora.html">
+    <link rel="stylesheet" href="productsinphora.html">
+    <link rel="stylesheet" href="blogsinphora.html">
+    <link rel="stylesheet" href="cultureinphora.html">
+    <link rel="stylesheet" href="contactusinphora.html">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            line-height: 40px;
+            margin: 0;
+        }
+        .container>*{
+display: flex;
+list-style: none;
+gap: 5px;
+
+        }
+        .container{
+            position: fixed;
+            /* background-color:whitesmoke; */
+            width: 100%;
+            margin: 10px;
+            
+        }
+        .container2{
+            background-color: whitesmoke;
+        }
+        .container ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            white-space: nowrap;
+            
+        }
+        .nav>li:hover{
+            color: orangered;
+            /* text-decoration: underline; */
+            transform: translateY(-10px);
+            
+        }
+        .container ul li:hover a{
+            color: orangered;
+            line-height: 10px;
+            text-underline-offset: 5px;
+            border-bottom: 2px solid;
+        
+        }
+        .applybutton{
+            background-color: orangered;
+            color: white;
+            border: 0;
+            /* padding-bottom: 5px; */
+            padding-left: 20px;
+            padding-right: 20px;
+            /* padding-top: 10px; */
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        ul svg{
+            height: 30px;
+        }
+        .chils{
+            color: orangered;
+        }
+        .Quotebutton{
+            background-color: orangered;
+            color: white;
+            border: 0;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .nextcontainer svg{
+            display: flex;
+            height: 400px;
+            
+        }
+.container2 h1{
+    color: orangered;
+}
+.offerbutton button{
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+margin: 10px;
+margin-left: 20px;
+margin-right: 20px;
+border: 0;
+border-radius: 10px;
+
+}
+.offerbutton button a{
+    text-decoration: none;
+color: black;
+}
+.list3{
+    display: none;
+margin-top: 20px;
+
+}
+.list3 ul li{
+    list-style-type: none;
+}
+.list3 ul li:hover{
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+#internship:hover .list3{
+display: block;
+color: black;
+}
+.mainflex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    
+}
+.cards{
+    display: flex;
+    gap: 20px;
+   
+}
+.card{
+     border: 1px solid rgb(231, 228, 228);
+     border-radius: 10px;
+}
+.card:hover{
+    border-color: orangered;
+    border: 2px solid orangered;
+}
+.card:hover h2{
+    color: orangered;
+}
+    
+.fixed{
+    position: fixed;
+    bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: 0px;
+    bottom: 0;
+    background-color: orangered;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.offerbutton button:hover{
+    background-color: orangered;
+    color: white;
+}
+.card1{
+    display: flex;
+    gap: 80px;
+    margin: 10px;
+    padding: 10px;
+}
+/* .cards2{
+    display: flex;
+}*/
+.cards2q{
+display: flex;
+gap: 20px;
+
+}
+.cards2{
+    border: 1px solid rgb(231, 228, 228);
+     border-radius: 10px;
+     text-align: center;
+} 
+.innercard{
+    background: radial-gradient(circle at 100 deg, green);
+}
+.cards2:hover{
+border: 2px solid orangered;
+
+
+}
+.cards2:hover h2{
+    color: orangered;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 40px;
+}
+.getintouch{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.footer{
+    margin: 20px;
+    
+}
+.placeholderemail{
+    border-radius: 5px;
+    border: 0;
+}
+.joinusnow{
+    background-color: orangered;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.companylist li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+.companylist{
+    list-style: none;
+    
+}
+.companylist li a:hover{
+background-color: orangered;
+color: white;
+border-radius: 10px;
+padding-left: 2px;
+padding-right: 2px;
+padding-top: 2px;
+padding-bottom: 2px;
+}
+.servicelist{
+    list-style: none;
+}
+.servicelist li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+.servicelist li a:hover{
+   background-color: orangered;
+color: white;
+border-radius: 10px;
+padding-left: 2px;
+padding-right: 2px;
+padding-top: 2px;
+padding-bottom: 2px; 
+}
+.imagelogo img{
+    height: 20px;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li class="imagelogo"><img src="https://shinedezign.com/img/logo.png"></li>
+            <li><a href="homeinphora.html">HOME</a></li>
+            <li><a href="aboutinphora.html">ABOUT</a></li>
+            <li><a href="servicesinphora.html">SERVICES</a></li>
+            <li><a href="portfolioinphora.html">PORTFOLIO</a></li>
+            <li><a href="productsinphora.html">PRODUCTS</a></li>
+            <li><a href="blogsinphora.html">BLOGS</a></li>
+            <li><a href="cultureinphora.html">CULTURE</a></li>
+            <li><a href="contactusinphora.html">CONTACT US</a></li>
+            <li id="internship"><a href="">INTERNSHIP PROGRAM</a>
+            <div class="list3">
+                <ul>
+                    <li>AI/ML Training Program</li>
+                    <li>Web Development Training Program</li>
+                    <li>Python Training Program</li>
+                    <li>Digital Marketing Training</li>
+                    <li>Mean/Mern Stack Training Program</li>
+                    <li>PHP Laravel Training Program</li>
+                    <li>Shopify Training Program</li>
+                    <li>WordPress Training</li>
+                    <li>Devops Training Program</li>
+                </ul>
+            </div></li>
+            <div><button class="applybutton">APPLY FOR NOW</button></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 76, 5)" d="M470.6 566.6L566.6 470.6C575.8 461.4 578.5 447.7 573.5 435.7C568.5 423.7 556.9 416 544 416L480 416L480 96C480 78.3 465.7 64 448 64C430.3 64 416 78.3 416 96L416 416L352 416C339.1 416 327.4 423.8 322.4 435.8C317.4 447.8 320.2 461.5 329.3 470.7L425.3 566.7C437.8 579.2 458.1 579.2 470.6 566.7zM214.6 73.4C202.1 60.9 181.8 60.9 169.3 73.4L73.3 169.4C64.1 178.6 61.4 192.3 66.4 204.3C71.4 216.3 83.1 224 96 224L160 224L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 224L288 224C300.9 224 312.6 216.2 317.6 204.2C322.6 192.2 319.8 178.5 310.7 169.3L214.7 73.3z"/></svg>
+        </ul>
+    </div>
+    <div class="nextcontainer">
+        <div class="mainflex"><div><h1>Empower Digital Growth <br> With our <span class="chils">Tech Solutions!</span></h1>
+        <span>Elevate Your Business with our next-generation digital services and consulting</span>
+        <button class="Quotebutton">GET A QUOTE</button></div>
+        <div class="container1">
+            <img src="https://shinedezign.com/img/banner-home-rgt.png"></div></div>
+        <div class="container2">
+            <h1>Who are we?</h1>
+                <span>With more than 14+ years of experience in building over 100+ software platforms, we provide solutions to enable digital breakthroughs for industry leaders and challengers. As a leading software development company, we deliver custom software and mobile apps, carry out in-depth analyses to provide web hosting automations, ecommerce and web development solutions. Our team possesses the capability to streamline business processes and grow revenue with our digital services, adhering to the best industry standards and practices. Whether you are a startup or an enterprise, you can trust us to transform your technology vision into reality.</span>
+            
+        </div>
+    </div>
+    <div class="offerbutton">
+        <h1>What we offer</h1>
+        <button><a href="phpinphora.html">PHP</a></button>
+        <button><a href="laravelinphora.html">Laravel</a></button>
+        <button><a href="whmcsinphora.html">WHMCS</a></button>
+        <button><a href="shopifyinphora.html">Shopify</a></button>
+        <button><a href="magentoinphora.html">Magento</a></button>
+        <button><a href="wordpressinphora.html">WordPress</a></button>
+        <button><a href="awsinphora.html">AWS</a></button>
+        <button><a href="nodejsinphora.html">NodeJS</a></button>
+        <button><a href="angularjsinphora.html">AngularJS</a></button>
+        <button><a href="reactinphora.html">React</a></button>
+        <button><a href="iosinphora.html">IOS</a></button>
+        <button><a href="androidinphora.html">Android</a></button>
+        <button><a href="crossplatforminphora.html">Cross-Platform</a></button>
+        <button><a href="uiuxinphora.html">UI/UX</a></button>
+        
+    </div>
+    <span>Turn to our services and consulting solutions and make your business a part of the digital transformation.</span>
+    <div class="cards">
+        <div class="card">
+            <h2>Web & Ecommerce Development</h2>
+            <span>Convert your first-time visitors into loyal customers with our customizable and scalable Web applications.</span>
+        </div>
+        <div class="card">
+            <h2>Mobile App Development</h2>
+            <span>Want to create an engaging mobile apps experience for your users? We develop apps that users will enjoy and love.</span>
+        </div>
+        <div class="card">
+            <h2>Dedicated Team</h2>
+            <span>Struggling to manage your own team efficiently? Hire our dedicated team of professionals for faster project delivery.</span>
+        </div>
+        <div class="card">
+            <h2>Digital Marketing</h2>
+            <span>Opt for our paid and organic online marketing tactics to build the online presence of your business and promote it globally.</span>
+        </div>
+        <div class="card">
+            <h2>Infrastructure & AWS/ Azure</h2>
+            <span>Need to maximize the performance of your current AWS/ Azure/ Gcloud infrastructure? We can help you with our services.</span>
+        </div>
+        <div class="card">
+            <h2>Devops Services</h2>
+            <span>Let's shorten the systems development life cycle and provide faster delivery with high software quality.</span>
+        </div>
+    </div>
+    <button class="fixed">Need Help</button>
+    <div>
+        <h1>Our Products</h1>
+        <div class="card1">
+            <div class="cards1">
+                <img src="https://shinedezign.com/img/hostingseekers.svg">
+            </div>
+            <div class="cards1">
+                <img src="https://shinedezign.com/img/whmgsglobal-services.svg">
+            </div>
+            <div class="cards1">
+                <img src="https://shinedezign.com/img/shinedezigninfonnet.svg">
+            </div>
+            <div class="cards1">
+                <img src="https://shinedezign.com/img/docintel-logo.svg">
+            </div>
+            <div class="cards1">
+                <img src="https://shinedezign.com/img/fitness-logo.svg">
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <h1>Certifications & Accreditations</h1>
+        <div class="cards2q">
+            <div class="cards2">
+            <img src="https://shinedezign.com/img/clutch.svg">
+            <h1>4.8/5</h1>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star-half-stroke" style="color: rgb(251, 88, 6);"></i>
+            
+            <div class="innercard">
+                <h2>One of the Best IT Service firm</h2>
+            <span>Build a constructive driven approach and end to end enterprise technology solutions.</span>
+        </div>
+        </div>
+        <div class="cards2">
+            <img src="//shinedezign.com/img/shopify_app.svg">
+            <h1>4.8/5</h1>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star-half-stroke" style="color: rgb(251, 88, 6);"></i>
+           <div class="innercard">
+            <h2>Dedicated and trained professionals</h2>
+            <span>Providing exceptional technology solutions adhering to globally recognized standards.</span>
+        </div>
+        </div>
+        <div class="cards2">
+            <img src="https://shinedezign.com/img/c-panel.svg">
+            <div class="innercard">               <span></span>
+            <h2>Web Hosting Control pannel</h2>
+            <span>cpanel server management and unlimited WHM/cpanel server  support from certified  admins!</span>
+            </div>
+        </div>
+        <div class="cards2">
+            <img src="https://shinedezign.com/img/bing.svg">
+            <div class="innercard">
+            <h2>Accredited Professionals</h2>
+            <span>Profecient in mocrosoft advertising, our company experts drive your business forward.</span>
+        </div>
+        </div>
+        <div class="cards2">
+            <img src="https://shinedezign.com/img/hubspot.svg">
+            <div class="innercard">
+            <h2>Inbound Marketing Services</h2>
+            <span>We optimise HubSpots to maximise usage,  effectiveness, integration and ROI.</span>
+        </div>
+        </div>
+        <div class="cards2">
+            <img src="https://shinedezign.com/img/google-logo.svg">
+            <div class="innercard">
+            <h2>Certified Partners</h2>
+            <span> Get started with Google PPC internet marketing. Search Ads display ads-apps Ads.</span>
+        </div>
+        </div>
+        <div class="cards2">
+            <img src="https://shinedezign.com/img/shopify_expertsvg.svg">
+            <h1>4.8/5</h1>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star-half-stroke" style="color: rgb(251, 88, 6);"></i>
+            <div class="innercard">
+            <h2>Shopify  App Developers</h2>
+            <span>Our shopify experts are trustworthy and empowered members who work to help businesses thrive.</span>
+        </div>
+        </div>
+        <div class="cards2">
+            <img src="https://shinedezign.com/img/goodfirms.svg">
+            <h1>4.8/5</h1>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(251, 88, 6); height: 100px;"></i>
+            <i class="fa-solid fa-star-half-stroke" style="color: rgb(251, 88, 6);"></i>
+            <div class="innercard">
+            <h2>One of the Top IT Service Firm</h2>
+            <span>We build roburst and adward winning web while providing innovation solutions.</span>
+        </div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+            <h2>Like what you see?<br> Let's start a conersation.</h2>
+            
+            <button class="getintouch">GET IN TOUCH</button>
+            <h3>KEEP IN TOUCH</h3>
+            <span>Subscribe to our newsletter and stay connected by reading our updates.</span>
+            <label for=""><input class="placeholderemail" type="text" placeholder="Enter your email"></label>
+            <button class="joinusnow">JOIN US NOW</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+            <h3>COMPANY</h3>
+            <ul class="companylist">
+                <li><a href="aboutinphora.html">About Us</a></li>
+                <li><a href="servicesinphora.html">Our Services</a></li>
+                <li><a href="portfolioinphora.html">Portfolio</a></li>
+                <li><a href="blogsinphora.html">Blogs</a></li>
+                <li><a href="contactusinphora.html">Contact Us</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Case Studies</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Refund Policy</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div> 
+            <h3>SERVICES</h3>
+            <ul class="servicelist">
+                <li><a href="phpinphora.html">PHP Development</a></li>
+                <li><a href="laravelinphora.html">Laravel Development</a></li>
+                <li><a href="shopifyinphora.html">Shopify Development</a></li>
+                <li><a href="whmcsinphora.html">WHMCS Development</a></li>
+                <li><a href="wordpressinphora.html">WordPress Development</a></li>
+                <li><a href="uiuxinphora.html">UI/UX Development</a></li>
+                <li><a href="nodejsinphora.html">NodeJS Development</a></li>
+                <li><a href="reactinphora.html">ReactJS Development</a></li>
+                <li><a href="">WordPress Theme (Free)</a></li>
+                <li><a href="">Vayu WordPress Theme (Premium)</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+            <h3>VISIT US AT</h3>
+            <h3>Mohali Office - 1</h3>
+            <address>Uttam Towers, C-177, 1st & 4th Floor Phase-8B, IND. Area, Sahibzada Ajit Singh Nagar, Punjab 160071</address>
+            <h3>Mohali Office - 2</h3>
+            <address>Plot NO F-353, Phase-8B, IND Area, near Bosch Service Center, Sahibzada Ajit Singh Nagar, Punjab 160071</address>
+            <h3>Pune Office</h3>
+            <address>Anchor Branch 3: Insignia, 32, Pan Card Club Rd, near Westport, Baner 411045</address>
+            <h3>England Office</h3>
+            <address>Flat 96 Trident House, 76 Station Road, Hayes, England, UB3 4FQ</address><hr>
+            </div>
+            <div>
+                <span>Copywrite c 2026 Shine Dezign. All Rights Reserved</span>
+            </div>
+            <div class="footer">
+                <i class="fa-brands fa-facebook-f" style="color: rgb(255, 255, 255);"></i>
+                <i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i>
+                <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

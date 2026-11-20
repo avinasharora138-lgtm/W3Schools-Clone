@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo{
+            color: #04AA6D;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .navbar1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+
+        }
+        .navbar1 nav{
+            display: flex;
+            gap: 20px;
+        }
+        .navbar1 a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        .navbar1 input{
+            padding: 10px;
+            border-radius: 20px;
+            width: 250px;
+            border: 1px solid rgb(208, 206, 206);
+        }
+        .login{
+            background-color: #04AA6D;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar1">
+        <div class="logo">W3Schools</div>
+        <nav>
+            <a href="">Tutorials</a>
+            <a href="">Exercises</a>
+            <a href="">Certificates</a>
+            <a href="">Services</a>
+        </nav>
+
+        <input 
+        type="text"
+        placeholder="Serach...">
+
+        <button class="login">Login</button>
+    </header>
+</body>
+</html>

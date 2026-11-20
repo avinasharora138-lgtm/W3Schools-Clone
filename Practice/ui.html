@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Design</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx0enaaX7H7VuA9waotYkf-Zz89AV-xsjJuag2NUPUbw&s=10);
+        background-size: cover;
+        padding: 10px;
+        /* height: 600px; */
+    }
+    .main{
+display: flex;
+        /* gap: 400px; */
+    }
+    .section{
+        background-color: white;
+        /* height: 400px;
+        width: 800px; */
+        border-radius: 10px;
+    }
+    .img img{
+        margin: 10px;
+    }
+    .img{
+        display: flex;
+        gap: 60px;
+        margin: 30px;
+    }
+    .img ul{
+        list-style: none;
+        display: flex;
+        /* gap: 10px; */
+        justify-content: space-between;
+        padding: 20px;
+        flex: 1;
+        /* background-color: blue; */
+    }
+    .ghost{
+        color: purple;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    button{
+        border: 0;
+        background-color: purple;
+        color: white;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .flex{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+    }
+    /* .flex section{
+        flex: 1 1;
+    } */
+    .flex img{
+        width: 300px;
+    }
+    #section1>*{
+        /* padding: 10px; */
+        margin: 20px;
+    }
+    .wrapper{
+        display: flex;
+    }
+    @media(orientation: portrait) {
+        .flex{
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 500px) {
+        .section{
+            background-color: red;
+        }
+    }
+    @media (min-width: 501px) and (max-width: 700px) {
+        .section{
+            background-color: yellow;
+        }
+           .wrapper{
+        flex-direction: column;
+    }
+    }
+    @media (min-width: 701px){
+        .section{
+            background-color: green;
+        }
+     
+    }
+    @media (orientation: portrait){
+        ul{
+            flex-direction: column;
+        }
+    }
+    @media(orientation: portrait){
+    
+    }
+</style>
+<body>
+   <div class="container">
+    <div class="main"><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xL3Ib7Cl0wvLwxMawMYaU5RQ7j_VahLuuzgA-at8vg&s=10 height="100px" width="100px">
+        </div>
+    <h1>New Simple Ui Design</h1>
+    </div>
+    <div class="section">
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgfM_WzDd3bSjVlmlUIGwPz8cefmjBxZxP_akAlES7rQ&s=10" alt="" height="50px">
+            <div class="wrapper"><ul>
+            <li>Case Study</li>
+                <li>Feature</li>
+                <li>Pricing</li>
+                </ul><ul>
+                <li>Demo</li>
+                <li>Blog</li>
+            </ul>
+            </div>
+        </div>
+        <div class="flex">
+            <section id="section1">
+                <div class="ghost">NEW GHOST BROWSER</div>
+        <h1>Isolate your Identities</h1>
+
+        
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo vel eligendi voluptate totam iure nihil? Corrupti, aliquam omnis sit commodi asperiores inventore esse vel? Saepe eaque sed eum amet.lo</span>
+            <button>Download Now</button>
+            </section>
+            <section>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU02nOrP6nUvh5c76IuPim3NVv4qFjdHOBG9Powz3Ydg&s=10" alt="">
+            </section>
+            </div>
+    </div>
+    
+   </div> 
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML & CSS</title>
+</head>
+<style>
+    ::-webkit-scrollbar{
+        
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: red;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: violet;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAcrrS9QJuXTa8hf_EmUREumtXLhUhvsGGU26rQmnDrw&s=10);
+        filter: brightness(0.8) contrast(0.8) blur(1);
+        background-size: cover;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        padding: 10px;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav .logo{
+        padding: 10px;
+        color: white;
+    }
+    .container main{
+        padding: 100px;
+    }
+    .container main>*{
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    .button{
+        margin: 50px auto;
+    }
+    .button button{
+        padding: 10px;
+        color: white;
+        background-color: orangered;
+        border: 0;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .bottom header{
+        margin-top: 50px;
+        text-align: center;
+        color: orangered;
+    }
+    .bottom header h2{
+        padding: 10px;
+    }
+    .cards{
+        display: flex;
+        gap: 40px;
+        margin: 20px 60px;
+    }
+    .card{
+        background-color: orangered;
+        padding: 30px;
+        border-radius: 10px;
+        color: white;
+    }
+    .card .heading{
+        font-weight: 800;
+        text-align: center;
+        padding: 10px;
+    }
+    @media (orientation: portrait){
+        .cards{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <section class="container">
+        <nav>
+            <div class="logo">EduFord</div>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COLUMN</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>World's Best University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum modi debitis molestiae asperiores. Distinctio error minus maiores cupiditate a. Officiis sequi amet sapiente cum nemo doloribus quam accusamus, provident voluptates quo error ipsa minus laborum alias odio dolorum, suscipit eum beatae sit ex rerum a delectus officia? Alias, odio!</p>
+            <div class="button">
+                <button>VISIT SITE FOR MORE INFO</button>
+            </div>
+        </main>
+    </section>
+    <section class="bottom">
+        <header>
+            <h2>Courses we offer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sit optio corrupti doloremque minima pariatur, cupiditate possimus sapiente, laborum architecto debitis aut corporis consequatur! Velit natus odit voluptates excepturi doloremque.</p>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <div class="heading">Intermediate</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nobis inventore natus. Quae libero consequatur nulla cumque. Quibusdam reprehenderit quidem accusantium obcaecati! Blanditiis quas iste aut vero beatae natus ab!</p>
+            </div>
+            <div class="card">
+                <div class="heading">Degree</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde earum dolores similique minus, veritatis aliquid perspiciatis accusamus fuga enim exercitationem, quisquam cumque hic, reprehenderit minima reiciendis quam vero in! Odit!</p>
+            </div>
+            <div class="card">
+                <div class="heading">Post Graduation</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium adipisci ad velit rerum eaque recusandae autem sapiente, repellendus quam vitae esse voluptatibus. Quae facere modi natus veritatis. Mollitia, ex? Maxime!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
